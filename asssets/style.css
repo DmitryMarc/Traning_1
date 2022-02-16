@@ -63,8 +63,9 @@ h1, h2, h3, h4, h5, h6{
 
 
 .header__bottom{
-    background: url("images/header/header_bg.png") top no-repeat;
-    background-size: cover;
+    background: url("images/header/header_bg.png") center no-repeat;
+    background-size: 100%;
+    height: 100vh;
     display: flex;
 }
 
@@ -72,28 +73,26 @@ h1, h2, h3, h4, h5, h6{
     display: flex;
 }
 
-.header__bottom-col{
-    width: 50%;
-}
-
-.header__bottom-col:last-child{
+.section__content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     padding-left: 65px;
     padding-right: 0;
+    width: 50%;
 }
 
-.header__bottom-img{
+.section-img{
     width: 100%;
+    height: auto;
 }
 
 .header__text{
     margin: 65px 0 80px;
 }
 
-.header__btn{
+.section__btn{
     font-family: 'Open Sans', sans-serif;
     font-size: inherit;
     font-weight: bold;
@@ -106,14 +105,82 @@ h1, h2, h3, h4, h5, h6{
     background-color: #e6c8c3;
 }
 
-.header__btn:hover{
+.section__btn:hover{
     background-color: #e08979;
     color: #36383b;
     box-shadow: 0 0 2px 2px #e08979;
 }
 
-.header__btn:active{
+.section__btn:active{
     background-color: #a84646;
     color: #Fff;
     box-shadow: 0 0 2px 2px #a84646;
 }
+
+.pregnant{
+    background: url("images/pregnant/section_1_bg.jpg") center no-repeat;
+    background-size: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.pregnant > .container{
+    display: flex;
+}
+
+.pregnant .section__content{
+    padding-left: 0;
+}
+
+.programs{
+    display: flex;
+    justify-content: space-around;
+    height: 480px;
+}
+
+.programs__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.programs__item > .section__title{
+    font-size: 1.1em;
+}
+
+.programs__item > .section__text{
+    margin-top: 5px;
+}
+
+.programs__img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 210px;
+}
+
+.yoga{
+    background: url("images/yoga/section_3_bg.png") center no-repeat;
+    background-size: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.yoga > .container{
+    display: flex;
+}
+
+.join{
+    background: url("images/join/join_bg.png") left no-repeat, url("images/join/section_4_bg.png") center no-repeat;
+    background-size: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.join > .container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
