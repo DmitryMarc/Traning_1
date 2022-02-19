@@ -83,6 +83,10 @@ h1, h2, h3, h4, h5, h6{
     width: 50%;
 }
 
+.section__content:first-child{
+    padding-left: 0;
+}
+
 .section-img{
     width: 100%;
     height: auto;
@@ -231,4 +235,58 @@ h1, h2, h3, h4, h5, h6{
     
     margin-top: 20px;
     text-align: center;
+}
+
+.showreel{
+    display: flex;
+    height: 100vh;
+    background-color: #e5ccc6;
+}
+
+.showreel > .container{
+    display: flex;
+}
+
+.showreel .section__content:first-child{
+    position: relative;
+}
+
+.showreel .section-img{
+    transform: scale(-1, 1);
+    box-shadow: -10px 10px 20px #36383b;
+    
+    
+}
+
+.showreel__triangle{
+    border-top: 50px solid transparent;
+    border-right: 0;
+    border-bottom: 50px solid transparent;
+    border-left: 70px solid #fff;
+    position: absolute;
+    left: 45%;
+    transition: transform .08s linear;
+}
+
+.showreel__triangle:active{
+    transform: scale(.9);
+}
+
+
+.showreel__social a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    
+}
+
+.showreel__social a:first-child{
+    padding-left: 0;
+}
+
+.showreel__social .fa-brands{
+    font-size: 1.6em;
+    background-color: #fff;
+    color: #484f5b;
+    line-height: 0.8;
 }
