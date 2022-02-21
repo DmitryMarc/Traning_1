@@ -300,11 +300,17 @@ h1, h2, h3, h4, h5, h6{
 .message > .container{
     text-align: center;
     width: 70%;
+    max-width: 940px;
     margin: auto;
 }
 
 .message__header{
     margin-bottom: 70px;
+}
+
+.message__header > .section__text{
+    text-align: center;
+    margin: 20px 35px;
 }
 
 .message__name,
@@ -342,4 +348,96 @@ h1, h2, h3, h4, h5, h6{
 .message__text:focus{
     border: 1px solid #b0b0b0;
     box-shadow: 0 0 20px 2px #b0b0b0;
+}
+
+
+footer{
+    max-height: 325px;
+    background-color: #484f5b;
+}
+
+
+footer > .container{
+    display: flex;
+    justify-content:space-between;
+    padding: 70px 70px 60px;
+}
+
+.footer__col{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__col:first-child{
+    max-width: 190px;
+}
+
+.footer__col:nth-child(2){
+    flex-direction: row;
+    justify-content: space-between;
+    width: 460px;
+    max-width: 460px;
+}
+
+.footer__col:last-child{
+    max-width: 275px;
+}
+
+.footer__col,
+.footer__col-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer h3,
+footer h4{
+    color: #fff;
+}
+footer h3{
+    font-size: 1.1em;
+}
+footer h4{
+    font-size: 0.8em;
+    margin-bottom: 5px;
+}
+.footer__link{
+    font-family: inherit;
+    font-size: 0.8em;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: text-decoration .1s linear;
+}
+
+.footer__link:hover{
+    text-decoration: underline;
+}
+
+.footer__copyright{
+    color: #fff;
+    font-size: 0.8em;
+}
+
+.footer__logo img{
+    filter: invert(1);
+}
+
+.footer__copyright{
+    padding-left: 15px;
+}
+
+.footer__social a{
+    padding: 15px 10px 15px 15px;
+    text-decoration: none;
+}
+
+.footer__social a:first-child{
+    padding-left: 15px;
+}
+
+.footer__social .fa-brands{
+    line-height: .7;
+    background-color: #000;
+    color: #fff;
 }
