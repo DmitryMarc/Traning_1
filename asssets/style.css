@@ -532,4 +532,102 @@ footer h4{
     }
 }
 
+@media (max-width: 770px) {
+    body{
+        font-size: 15px;
+    }
+
+    h1, h2, h3, h4, h5, h6{
+        font-size: 2em;
+    }
+
+    .section__text{
+        margin: 10px 0 15px 0;
+    }
+
+    .header__top{
+        margin: 5px 0 0;
+    }
+
+    .header__menu{
+        display: none;
+    }
+
+    .section__content:last-child{
+        padding-left: 20px;
+    }
+
+    .section__btn{
+        width: 160px;
+        height: 40px;
+    }
+
+    .programs{
+        flex-wrap: wrap;
+        height: max-content;
+    }
+
+    .programs .content__item:not(:last-child){
+        width: 100%;
+        border-bottom: 2px solid #e5ccc6;
+    }
+
+    .galery{
+        height: max-content;
+        padding: 60px 0;
+    }
+
+    .galery__content{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .galery__content > .content__item{
+        width: 40%;
+    }
+    
+    .galery__content > .content__item:last-child{
+        margin-top: 20px;
+    }
+
+    .showreel__triangle {
+        border-top: 30px solid transparent;
+        border-right: 0;
+        border-bottom: 30px solid transparent;
+        border-left: 40px solid #fff;
+        left: 50%;
+    }
+
+
+    .message > .container{
+        width: 85%;
+    }
+
+    .message__header {
+        margin-bottom: 30px;
+    }
+
+    .message__header .section__text{
+        margin: 15px 20px;
+    }
+
+    .message__name, 
+    .message__gender {
+        height: 50px;
+        padding: 0 25px;
+        margin-top: 30px;
+    }
+
+    .message__text{
+        height: 130px;
+        padding: 25px 25px 10px;
+        margin: 30px 0 30px;
+    }
+
+
+    footer > .container {
+        justify-content: space-around;
+        padding: 40px 20px 40px;
+    }
+}
 
