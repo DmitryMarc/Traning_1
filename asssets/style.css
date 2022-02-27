@@ -50,6 +50,47 @@ h1, h2, h3, h4, h5, h6{
 .header__menu-item:hover{
     text-decoration: underline;
 }
+.header__burger{
+    display: none;
+    padding: 30px 20px 30px 30px;
+}
+.burger__middle,
+.burger__middle::before,
+.burger__middle::after{
+    width: 40px;
+    height: 4px;
+    background-color: #e6c8c3;
+}
+
+.burger__middle::before,
+.burger__middle::after{
+    position: relative;
+    display: block;
+    content: "";
+    transition: transform .1s linear;
+}
+
+.burger__middle::before{
+    top: -15px;
+}
+
+.burger__middle::after{
+    top: 10px;
+}
+
+.header__burger:hover .burger__middle{
+    background-color: transparent;
+}
+
+.header__burger:hover .burger__middle::before{
+    transform-origin: top left;
+    transform: translateY(1px) rotate(45deg);
+}
+
+.header__burger:hover .burger__middle::after{
+    transform-origin: bottom left;
+    transform: translateY(-1px) rotate(-45deg);
+}
 
 .container{
     width: 100%;
@@ -546,11 +587,31 @@ footer h4{
     }
 
     .header__top{
+        position: relative;
         margin: 5px 0 0;
     }
 
     .header__menu{
         display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #e6c8c3;
+    }
+
+    .header__menu-item:hover{
+        text-decoration: none;
+        background-color: #f1e3e0;
+    }
+    
+    .header__burger{
+        display: block;
+    }
+
+    /* Я тут!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Доработать бургер!*/
+    .header__burger:hover + .header__menu{
+        display: flex;
     }
 
     .section__content:last-child{
