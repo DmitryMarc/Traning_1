@@ -621,7 +621,7 @@ footer h4{
     .message__text{
         height: 130px;
         padding: 25px 25px 10px;
-        margin: 30px 0 30px;
+        margin: 30px 0;
     }
 
 
@@ -631,3 +631,121 @@ footer h4{
     }
 }
 
+
+@media (max-width: 575px) {
+    .header__top img{
+        width: 60px;
+    }
+    
+    .header__bottom > .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section__content{
+        padding-right: 20px;
+    }
+
+    .section__content{
+        width: 100%;
+        align-items: center;
+    }
+
+    .section__title,
+    .section__text{
+        text-align: center;
+    }
+
+    .yoga > .container{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .yoga .section__content:first-child{
+        margin-top: 20px;
+    }
+
+    .galery__header{
+        width: 80%;
+    }
+
+    .galery__content > .content__item{
+        width: 80%;
+    }
+
+    .galery__content > .content__item:nth-child(2) {
+        margin-top: 20px;
+    }
+
+    .showreel > .container{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .showreel .section__content:last-child{
+        margin-top: 20px;
+    }
+
+    .showreel__social a:first-child {
+        padding-left: 20px;
+    }
+
+    .showreel__triangle {
+        left: 45%;
+    }
+
+    .message > .container{
+        width: 90%;
+    }
+
+    .message__header {
+        margin-bottom: 25px;
+    }
+
+    .message__header .section__text{
+        margin: 10px 0;
+    }
+
+    .message__name, 
+    .message__gender {
+        height: 40px;
+        padding: 0 15px;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+
+    .message__text{
+        height: 110px;
+        padding: 15px 15px 10px;
+        margin: 20px 0;
+        border-radius: 10px;
+    }
+
+    footer > .container {
+        padding: 0 20px 20px;
+    }
+
+    .footer__logo > img {
+        width: 70px;
+    }
+
+    .footer__col:not(:last-child){
+        max-width: 100%;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .footer__col:first-child{
+        align-items: center;
+    }
+
+    .footer__col:first-child .footer__link{
+        padding: 5px 10px;
+    }
+
+    .footer__col:first-child .footer__link:last-child{
+        padding-top: 0;
+    }
+}
