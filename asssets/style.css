@@ -31,6 +31,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 /*Header + common*/
+
 .header__logo{
     cursor: pointer;
 }
@@ -105,7 +106,15 @@ h1, h2, h3, h4, h5, h6{
     align-items: center;
 }
 
-
+.header__top.fixed{
+    margin-top: 0;
+    padding:  0 20px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
 
 .header__bottom{
     background: url("images/header/header_bg.png") top no-repeat;
