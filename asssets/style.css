@@ -114,6 +114,8 @@ h1, h2, h3, h4, h5, h6{
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
+    border-bottom:  1px solid #e6c8c3;
 }
 
 .header__bottom{
@@ -181,8 +183,8 @@ h1, h2, h3, h4, h5, h6{
 
 .pregnant{
     background: url("images/pregnant/section_1_bg.jpg") center no-repeat;
-    background-size: 100% 100%;
-    height: 100vh;
+    background-size: cover;
+    height: 80vh;
     display: flex;
 }
 
@@ -242,7 +244,7 @@ h1, h2, h3, h4, h5, h6{
 
 .join{
     background: url("images/join/join_bg.png") left no-repeat, url("images/join/section_4_bg.png") center no-repeat;
-    background-size: contain, 100%;
+    background-size: 100%, cover;
     height: 610px;
     display: flex;
 }
@@ -518,6 +520,20 @@ footer h4{
         font-size: 18px;
     }
 
+    .header__bottom,
+    .yoga,
+    .galery,
+    .showreel,
+    .message{
+        height: max-content;
+        padding: 60px 0;
+    }
+
+    .pregnant,
+    .join{
+        height: 50vh;
+    }
+
     .header__menu-item,
     .header__menu-item:last-child{
         padding: 10px 20px;
@@ -556,6 +572,12 @@ footer h4{
     h1, h2, h3, h4, h5, h6{
         font-size: 2.5em;
     }
+
+    .pregnant,
+    .join{
+        height: 45vh;
+    }
+
     footer > .container{
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -630,6 +652,11 @@ footer h4{
     .section__btn{
         width: 160px;
         height: 40px;
+    }
+
+    .pregnant,
+    .join{
+        height: 35vh;
     }
 
     .programs{
@@ -726,6 +753,28 @@ footer h4{
     .section__text{
         text-align: center;
     }
+
+    .pregnant,
+    .join{
+        height: 30vh;
+        background-position: right;
+    }
+
+    .pregnant > .container,
+    .join > .container{
+        background-color: rgba(230, 200, 195, 0.4);
+    }
+    
+    .pregnant .section__btn,
+    .join .section__btn{
+        box-shadow: inset 0 0 30px 5px #e08979;
+    }
+
+    .join{
+        background: url("images/join/join_bg.png") left no-repeat, url("images/join/section_4_bg.png") center no-repeat;
+        background-size: cover, cover;
+    }
+
 
     .yoga > .container{
         flex-direction: column-reverse;
