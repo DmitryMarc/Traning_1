@@ -36,6 +36,14 @@ $(function() {
         }, 500);
     });
 
+    // Menu nav toggle
+    $("#header__burger").on("click", function (event){
+        event.preventDefault();
+
+        $(this).toggleClass("active");
+        $("#header__menu").toggleClass("active");
+    });
+
 });
 
 // will add active class for a link; maybe

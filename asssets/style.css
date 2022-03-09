@@ -79,16 +79,16 @@ h1, h2, h3, h4, h5, h6{
     top: 10px;
 }
 
-.header__burger:hover .burger__middle{
+.header__burger.active .burger__middle{
     background-color: transparent;
 }
 
-.header__burger:hover .burger__middle::before{
+.header__burger.active .burger__middle::before{
     transform-origin: top left;
     transform: translateY(1px) rotate(45deg);
 }
 
-.header__burger:hover .burger__middle::after{
+.header__burger.active .burger__middle::after{
     transform-origin: bottom left;
     transform: translateY(-1px) rotate(-45deg);
 }
@@ -100,20 +100,20 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .header__top{
-    margin: 15px 0 5px;
+    padding-top: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* 9.03.22 */
 .header__top.fixed{
-    margin-top: 0;
-    padding:  0 20px;
     background-color: #fff;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    padding: 0 20px;
     z-index: 1;
     border-bottom:  1px solid #e6c8c3;
 }
@@ -184,7 +184,7 @@ h1, h2, h3, h4, h5, h6{
 .pregnant{
     background: url("images/pregnant/section_1_bg.jpg") center no-repeat;
     background-size: cover;
-    height: 80vh;
+    height: 100vh;
     display: flex;
 }
 
@@ -245,7 +245,7 @@ h1, h2, h3, h4, h5, h6{
 .join{
     background: url("images/join/join_bg.png") left no-repeat, url("images/join/section_4_bg.png") center no-repeat;
     background-size: 100%, cover;
-    height: 610px;
+    height: 100vh;
     display: flex;
 }
 
@@ -514,14 +514,22 @@ footer h4{
     color: #fff;
 }
 
+@media (max-width: 1254px){
+    .container{
+        padding: 0 20px;
+    }
+}
 
 @media (max-width: 1230px) {
     body{
         font-size: 18px;
     }
 
+    .container{
+        padding: 0;
+    }
+
     .header__bottom,
-    .yoga,
     .galery,
     .showreel,
     .message{
@@ -530,8 +538,9 @@ footer h4{
     }
 
     .pregnant,
+    .yoga,
     .join{
-        height: 50vh;
+        height: 80vh;
     }
 
     .header__menu-item,
@@ -574,8 +583,9 @@ footer h4{
     }
 
     .pregnant,
+    .yoga,
     .join{
-        height: 45vh;
+        height: 70vh;
     }
 
     footer > .container{
@@ -619,7 +629,6 @@ footer h4{
 
     .header__top{
         position: relative;
-        margin: 5px 0 0;
     }
 
     .header__menu{
@@ -629,6 +638,10 @@ footer h4{
         top: 100%;
         right: 0;
         background-color: #e6c8c3;
+    }
+
+    .header__menu.active{
+        display: flex;
     }
 
     .header__menu-item:hover{
@@ -641,9 +654,7 @@ footer h4{
     }
 
     /* Я тут!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Доработать бургер!*/
-    .header__burger:hover + .header__menu{
-        display: flex;
-    }
+   
 
     .section__content:last-child{
         padding-left: 20px;
@@ -655,8 +666,9 @@ footer h4{
     }
 
     .pregnant,
+    .yoga,
     .join{
-        height: 35vh;
+        height: 50vh;
     }
 
     .programs{
@@ -684,7 +696,7 @@ footer h4{
     }
     
     .galery__content > .content__item:last-child{
-        margin-top: 20px;
+        margin-top: 30px;
     }
 
     .showreel__triangle {
@@ -756,8 +768,13 @@ footer h4{
 
     .pregnant,
     .join{
-        height: 30vh;
+        height: 35vh;
         background-position: right;
+    }
+
+    .yoga{
+        height: max-content;
+        padding: 60px 0;
     }
 
     .pregnant > .container,
@@ -795,7 +812,7 @@ footer h4{
     }
 
     .galery__content > .content__item:nth-child(2) {
-        margin-top: 20px;
+        margin-top: 30px;
     }
 
     .showreel > .container{
