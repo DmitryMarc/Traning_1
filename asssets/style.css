@@ -113,7 +113,7 @@ h1, h2, h3, h4, h5, h6{
     top: 0;
     left: 0;
     right: 0;
-    padding: 0 20px;
+    padding: 5px 20px 0;
     z-index: 1;
     border-bottom:  1px solid #e6c8c3;
 }
@@ -514,7 +514,7 @@ footer h4{
     color: #fff;
 }
 
-@media (max-width: 1254px){
+@media (max-width: 1274px){
     .container{
         padding: 0 20px;
     }
@@ -541,6 +541,10 @@ footer h4{
     .yoga,
     .join{
         height: 80vh;
+    }
+
+    .header__top.fixed{
+        padding: 5px 0 0 0;
     }
 
     .header__menu-item,
